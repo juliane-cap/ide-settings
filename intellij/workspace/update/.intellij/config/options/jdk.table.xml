@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <application xmlns:merge="https://github.com/devonfw/IDEasy/merge">
-  <component name="ProjectJdkTable" merge:id="./jdk/name[@value='Java']/.." merge:strategy="override">
-    <jdk version="2">
+  <component name="ProjectJdkTable">
+    <jdk version="2" merge:id="jdk/name[@value='Java']/.." merge:strategy="override">
       <name value="Java"/>
       <type value="JavaSDK"/>
       <version value="OpenJDK $[JAVA_VERSION]"/>
