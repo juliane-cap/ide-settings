@@ -29,8 +29,8 @@
     <option name="myRunOnSave" value="true"/>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JUnit" factoryName="JUnit" merge:id="name()">
-      <shortenClasspath name="ARGS_FILE"/>
+    <configuration default="true" type="JUnit" factoryName="JUnit" merge:id="configuration[@default='true' and @type='JUnit']">
+      <shortenClasspath name="ARGS_FILE" merge:id="name()"/>
       <option name="METHOD_NAME" value=""/>
       <option name="TEST_OBJECT" value="class"/>
       <method v="2" merge:id="@v">
