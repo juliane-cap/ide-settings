@@ -1,0 +1,31 @@
+Welcome to IDEasy!
+We have automatically installed your local IDE for this project now.
+This includes all tools needed for your daily development work as well as plugins needed for your IDEs.
+Also git code repositories can be cloned automatically during the setup.
+
+These are the IDE settings for IDEasy itself.
+If you want to create your own project based on IDEasy read this documentation:
+https://github.com/devonfw/IDEasy/blob/main/documentation/usage.adoc#admin
+If you just want to use IDEasy as a developer, you should first switch to your new project
+
+icd IDEasy
+
+(in case you called 'ide create IDEasy -' before)
+
+Then you can start your favourite IDE by typing e.g.
+
+ide intellij
+
+(or 'ide eclipse', 'ide vscode', 'ide android-studio', 'ide pycharm', ...)
+For details check the help:
+
+ide help
+
+And consider the following sources:
+
+* https://github.com/devonfw/IDEasy/blob/main/documentation/usage.adoc#developer
+* https://github.com/devonfw/IDEasy/blob/main/documentation/features.adoc
+* https://github.com/devonfw/IDEasy/blob/main/documentation/configuration.adoc
+* https://github.com/devonfw/IDEasy/discussions
+
+Have fun with IDEasy!
