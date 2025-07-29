@@ -17,13 +17,13 @@
    hit return and then type your password (do not supply as argument as otherwise it will be saved to the history of your shell)
    Then copy the encrypted password as according password to this settings.xml
    -->
-<servers>
-   <server>
-     <id>repository</id>
-     <username>${env.USERNAME}</username>
-     <password>$[mavenRepoPassword]</password>
-   </server>
- </servers>
+  <servers>
+    <server>
+      <id>repository</id>
+      <username>${env.USERNAME}</username>
+      <password>$[mavenRepoPassword]</password>
+    </server>
+  </servers>
 
   <!--
   <mirrors>
@@ -31,14 +31,14 @@
       <id>nexus.central</id>
       <mirrorOf>central</mirrorOf>
       <name>central-mirror</name>
-      <url>https://my-production-line.s2-eu.capgemini.com/nexus3/repository/public</url>
+      <url>https://repository.company.com/nexus3/repository/public</url>
     </mirror>
   </mirrors>
   -->
-
+  
   <profiles>
     <profile>
-      <id>devonfw-ide</id>
+      <id>ideasy</id>
       <activation>
         <activeByDefault>true</activeByDefault> 
       </activation>
@@ -53,35 +53,5 @@
         -->
       </properties>
     </profile>
-    <profile>
-      <!-- https://github.com/devonfw/devon4j/blob/master/documentation/guide-testing-snapshots.asciidoc -->
-      <id>devonfw-snapshots</id>
-      <activation>
-        <!--<activeByDefault>true</activeByDefault>-->
-        <activeByDefault>false</activeByDefault> 
-      </activation>
-      <repositories>
-        <repository>
-          <id>devonfw-snapshots</id>
-          <name>devonfw SNAPSHOT releases</name>
-          <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
-          <releases>
-            <enabled>false</enabled>
-            <updatePolicy>never</updatePolicy>
-            <checksumPolicy>fail</checksumPolicy>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-            <checksumPolicy>fail</checksumPolicy>
-          </snapshots>
-        </repository>
-      </repositories>
-    </profile>
   </profiles>
-  <activeProfiles>
-    <!--
-    <activeProfile>my-profile</activeProfile>
-    -->
-  </activeProfiles>
 </settings>
